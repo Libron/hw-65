@@ -22,7 +22,7 @@ class Navigation extends Component {
             return null;
         }
         return (
-            <Navbar color="dark" dark expand="md">
+            <Navbar color="dark" dark expand="md" className="Navigation">
                 <NavbarBrand href="/">My Blog</NavbarBrand>
                 <NavbarToggler />
                 <Collapse isOpen navbar>
@@ -34,6 +34,11 @@ class Navigation extends Component {
                                 </NavLink>
                             </NavItem>
                         ))}
+                        <NavItem>
+                            <NavLink tag={RouterNavLink} to={`/pages/admin`} exact>
+                                <span className="nav-title">Admin</span>
+                            </NavLink>
+                        </NavItem>
                     </Nav>
                 </Collapse>
             </Navbar>

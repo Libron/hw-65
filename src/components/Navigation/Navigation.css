@@ -1,3 +1,7 @@
 .nav-title {
     text-transform: capitalize;
 }
+
+.Navigation {
+    margin-bottom: 50px;
+}
