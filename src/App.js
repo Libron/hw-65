@@ -12,8 +12,8 @@ class App extends Component {
             <Switch>
                 <Route path="/" exact component={Page} />
                 <Route path="/pages/admin" exact component={Admin} />
-                <Route path="/pages/:name" exact component={Page} />
-                <Route render={() => <h1>Not FOund</h1>} />
+                <Route path="/pages/:name" component={Page} />
+                <Route render={() => <h1>Not found !</h1>} />
             </Switch>
         </Layout>
     );
