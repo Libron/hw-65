@@ -3,6 +3,7 @@ import axios from '../../axios-instance';
 import {Container} from "reactstrap";
 
 import './Page.css';
+
 class Page extends Component {
     state = {
         title: '',
